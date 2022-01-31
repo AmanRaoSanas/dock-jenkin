@@ -1,10 +1,10 @@
 pipeline{
-    agent{ label "linux" }
+    agent { label "linux" }
     stages{
         stage("build"){
             steps{
                 sh """
-                docker buld -t dock-jen
+                docker buld -t dock-jen .
                 """ 
             }
         }

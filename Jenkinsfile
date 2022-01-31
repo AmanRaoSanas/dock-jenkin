@@ -13,6 +13,7 @@ pipeline{
             steps{
                 sh"""
                 docker run --rm dock-jen
+                """
             }
         }
     }
